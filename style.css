@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
+*,
+*::after,
+*::before {
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+  border-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+body {
+  background-color: #90adc6;
+}
+nav {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  font-size: 12px;
+}
+a{
+    color: #90adc6;
+}
+main {
+  margin: 3% 8%;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 5px;
+  padding: 4%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.leftMain{
+    background-color: #E9EAEC;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding : 1em;
+    width : 50vw;
+}
+.rightMain{
+    background-color: #E9EAEC;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding : 1em;
+}
+label,
+h3{
+    font-size: 24px;
+    color: #333652;
+    text-align: center;
+}
+#displayArea{
+    font-size: 16px;
+    color: #333652;
+    text-align: center;
+    padding-top: 1.5em;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+label{
+    font-weight: 600;
+}
+#number,/*this is input box id*/
+#submit{  
+    width: 40%;
+    padding: 3px;
+    margin-top: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 4px;
+}
+#submit{
+    margin-top: 1rem;
+    background-color: #333652;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.2s ease-in-out;
+}
+#submit:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+footer{
+    margin: 3% 8%;
+}
+.footeContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+button{
+    padding: 0.5em;
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 1em 1em 0.5em 1em;
+    color: #fff;
+    background-color: #333652;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    transition: all 0.2s ease-in-out;
+}
+button:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+@media only screen and (min-width: 240px) and (max-width:500px){
+
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .leftMain{
+        width: 100%;
+    }
+    .rightMain{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;    }
+}
