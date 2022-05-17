@@ -4,7 +4,8 @@ let btn = document.getElementById("submit");
 let headingNumber = document.getElementById("span");
 
 function multiply(a){
-
+    
+  if(!isNaN(a)){  
     let x = "";
 
     for(let i = 1 ; i <= 10 ; i++){
@@ -13,6 +14,7 @@ function multiply(a){
     display.innerHTML = x;
     headingNumber.innerHTML = a;
     userInput.value = "";
+  }
 }
 
 btn.addEventListener("click",() => {
